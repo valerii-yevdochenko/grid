@@ -56,6 +56,9 @@
     width: 84px;
     height: 42px;
     cursor: pointer;
+    animation-name: animateArrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 @media (max-width: 1280px) {
@@ -99,4 +102,16 @@
         letter-spacing: 9px;
     }
 
+}
+
+@keyframes animateArrow {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
