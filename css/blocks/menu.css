@@ -5,6 +5,10 @@
     flex-wrap: wrap;
 }
 
+.menu__black .menu__list {
+    justify-content: flex-start;
+}
+
 .menu__item {
     font-size: 18px;
     line-height: 40px;
@@ -13,6 +17,10 @@
     text-transform: uppercase;
     color: #fff;
     margin-left: 65px;
+}
+
+.menu--black .menu__item {
+    color: #000;
 }
 
 .menu__item:first-child {
@@ -26,6 +34,10 @@
     transition-property: color;
     transition-duration: 500ms;
 
+}
+
+.menu--black .menu__link {
+    color: #000;
 }
 
 .menu__link:hover, menu__link:active, menu__link:focus {
@@ -51,7 +63,7 @@
 
 @media (max-width: 768px){
 
-    .menu__list{
+    .menu__list, .menu--black .menu__list {
         justify-content: center;
     }
 }
